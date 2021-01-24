@@ -1,0 +1,127 @@
+{
+  "ltv_dataframe": {
+    "signals": {
+      "ltv_acc": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "ltv_month_of_calc": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "ltv_vertical": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "ltv_units": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "ltv_gmv": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "ltv_rtogmv": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "ltv_rto_units": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "ltv_rvpunits": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "ltv_rvpgmv": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "ltv_status": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      },
+      "cluster_num": {
+        "is_primary": false,
+        "source": {
+          "type": "DDPSource",
+          "mview": "ltv_raw_data_fact",
+          "fdpTableNames": [
+            "Unable to get Info"
+          ]
+        },
+        "primary": false
+      }
+    }
+  }
+}

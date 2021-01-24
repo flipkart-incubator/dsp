@@ -1,0 +1,5 @@
+Numpy==1.14.0
+Pandas==0.22.0
+Scipy==1.0.0
+scikit-learn==0.19.1
+XGBoost==0.80

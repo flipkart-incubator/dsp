@@ -1,0 +1,19 @@
+{
+  "library": {
+    "PyYAML": "3.13",
+    "chardet": "2.3.0"
+  },
+  "nativeLibrary": {
+    "acl": {
+      "version": "2.2.52-2",
+      "architecture": "amd64"
+    },
+    "adduser": {
+      "version": "3.113+nmu3",
+      "architecture": "all"
+    }
+  },
+  "os": "Debian GNU/Linux",
+  "osVersion": "8",
+  "imageLanguageVersion": "3.4.2"
+}

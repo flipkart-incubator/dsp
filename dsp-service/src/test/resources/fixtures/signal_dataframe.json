@@ -1,0 +1,246 @@
+{
+  "id": 1,
+  "name": "ltv_dataframe",
+  "signal_group": {
+    "id": "ltv_signal_group",
+    "description": "for life time value usecase",
+    "signalMetas": [
+      {
+        "signal": {
+          "name": "ltv_acc"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "ltv_month_of_calc"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "ltv_vertical"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "ltv_units"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "ltv_gmv"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "ltv_rtogmv"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "ltv_rto_units"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "ltv_rvpunits"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "ltv_rvpgmv"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "ltv_status"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "name": "cluster_num"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "ltv_raw_data_fact",
+          "description": null,
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "config": {
+    "dataframe_scope": [],
+    "visible_signals": [
+      {
+        "name": "ltv_acc"
+      },
+      {
+        "name": "ltv_month_of_calc"
+      },
+      {
+        "name": "ltv_vertical"
+      },
+      {
+        "name": "ltv_units"
+      },
+      {
+        "name": "ltv_gmv"
+      },
+      {
+        "name": "ltv_rtogmv"
+      },
+      {
+        "name": "ltv_rto_units"
+      },
+      {
+        "name": "ltv_rvpunits"
+      },
+      {
+        "name": "ltv_rvpgmv"
+      },
+      {
+        "name": "ltv_status"
+      }
+    ]
+  },
+  "sg_type": "CONFIG",
+  "dcp_table_name": null
+}

@@ -1,0 +1,17 @@
+*.ipr
+*.iws
+*.class
+*.pyc
+*.log
+*/*.log
+.idea/
+*.iml
+dependency-reduced-pom.xml
+*/target/**
+.Rhistory
+*.log
+*.DS_Store
+*.zip
+script-execution-engine/src/main/thrift/*
+target/**
+.Rproj.user

@@ -1,0 +1,40 @@
+server:
+  adminMinThreads: 8
+  adminMaxThreads: 8
+  minThreads: 64
+  maxThreads: 64
+  applicationContextPath: /
+  applicationConnectors:
+    - type: http
+      port: 9090
+      acceptorThreads: 6
+      selectorThreads: 12
+  adminConnectors:
+    - type: http
+      port: 9091
+      acceptorThreads: 1
+      selectorThreads: 1
+  maxQueuedRequests: 2048
+  gzip:
+    enabled: false
+  requestLog:
+    timeZone: Asia/Kolkata
+    appenders:
+      - type: file
+        archive: true
+        currentLogFilename: /var/log/flipkart/ipp-dsp-service/request.log
+        archivedLogFilenamePattern: /var/log/flipkart/ipp-dsp-service/request-%d.log
+        timeZone: Asia/Kolkata
+
+logging:
+  level: INFO
+  loggers:
+    io.dropwizard: INFO
+    org.hibernate.SQL: ALL
+  appenders:
+    - type: file
+      threshold: DEBUG
+      archive: true
+      currentLogFilename: /var/log/flipkart/ipp-dsp-service/service.log
+      archivedLogFilenamePattern: /var/log/flipkart/ipp-dsp-service/service-%d.log
+      timeZone: Asia/Kolkata

@@ -1,0 +1,15 @@
+#adding debian 8
+FROM debian:jessie-slim
+RUN apt-get update
+
+
+#adding latest R
+FROM r-base:3.5.1
+RUN apt-get update
+
+#creating new workdir
+WORKDIR /app
+
+
+ADD packages.R /app
+RUN Rscript /app/packages.R

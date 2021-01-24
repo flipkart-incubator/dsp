@@ -1,0 +1,66 @@
+{
+  "id": "DSP_SANITY_WG_new_test",
+  "description": "Sanity Test for all types of dataframe overrides",
+  "draft": true,
+  "version": 1,
+  "workflows": [
+    {
+      "id": "DSP_SANITY_WF",
+      "pipeline_steps": [
+        {
+          "id": "Step1",
+          "script": {
+            "execution_env": "PYTHON3",
+            "git_repo": "Flipkart/dsp-sandbox-trial",
+            "git_folder_path": "production/DSP_SANITY_WG_new_test/helloWorldTutorial/AlgorithmicExample/Python/trainAndExecute/csvAndFdpTest",
+            "file_path": "AlgorithmicExample_2_0.py",
+            "git_commit_id": "0982248ac02e414af8bde1859ceb81f3b7c1e82d",
+            "inputs": [
+              {
+                "name": "sample_dataframe_csv_leadtime_prod_test",
+                "data_type": "DATAFRAME",
+                "required": false
+              }
+            ],
+            "outputs": [
+              {
+                "name": "demo_output_dataframe_csv",
+                "data_type": "DATAFRAME",
+                "output_location_details": [
+                  {
+                    "type": "HiveOutputLocation",
+                    "database": "dcp_fact",
+                    "table": "python_demo_output_u_category_lead_time_fact_csv",
+                    "columnMapping": {
+                      "prediction": "DOUBLE"
+                    },
+                    "forceDelete": false
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "MODEL_EXECUTOR",
+          "resources": {
+            "cpu": "S",
+            "memory": "S"
+          }
+        }
+      ],
+      "input_partitions": [
+        "super_category"
+      ],
+      "output_partitions": [
+        "super_category"
+      ],
+      "workflow_execution_type": "TRAIN_AND_EXECUTE",
+      "dataframes": [
+        {
+          "id": 10,
+          "name": "sample_dataframe_csv_leadtime_prod_test"
+        }
+      ],
+      "defaultOverrides": "{\"DSP_SANITY_WF\":{\"partitionFilter\":[],\"dataframeOverrideMap\":{\"sample_dataframe_csv_leadtime_prod_test\":{\"type\":\"CSVDataframeOverride\",\"path\":\"/projects/planning/dsp-sandbox-stage/571643bd-3a08-4115-b6ff-e050b6d35744/fdp_csv.csv\",\"columnMapping\":{\"bu\":\"TEXT\",\"super_category\":\"TEXT\",\"category\":\"TEXT\",\"lead_time\":\"DOUBLE\"},\"csvFormat\":\"Oracle\"}},\"objectOverrideList\":[]}}"
+    }
+  ]
+}

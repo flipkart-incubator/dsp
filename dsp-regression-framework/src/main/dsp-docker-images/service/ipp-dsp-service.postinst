@@ -1,0 +1,26 @@
+#!/bin/bash
+set -ex
+
+PAC=ipp-dsp-service
+APP_UID=fk-idf-dev
+APP_GID=fk-idf-dev
+
+variant=base
+
+CMD="$1"
+
+if [ "$CMD" == "configure" ]; then
+    chown -R $APP_UID:$APP_GID /usr/share/$PAC
+    chown -R $APP_UID:$APP_GID /etc/$PAC
+
+    chown -R $APP_UID:$APP_GID /var/log/flipkart/$PAC
+    chmod -R 777 /etc/$PAC
+fi
+
+chmod 777 /etc/init.d/dsp-service.sh
+source /etc/default/ipp-dsp-service.env
+cat /etc/default/ipp-dsp-service.env | sudo tee -a profile
+source /etc/profile
+echo "*****************************************"
+
+exit 0

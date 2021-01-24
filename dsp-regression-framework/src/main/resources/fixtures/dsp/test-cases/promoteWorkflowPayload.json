@@ -1,0 +1,11 @@
+{
+  "commit_id": "91e67e6c716304df6c1b5eb0d0a6e30fce9574b7",
+  "hive_queue": "pds",
+  "mesos_queue": "experimentation",
+  "email_notifications": {
+    "recipients": {
+      "dsp-notifications@flipkart.com": "success, failure"
+    },
+    "workflow_states": "STARTED, WORKFLOW, OUTPUT_INGESTION"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "id": 10,
+  "name": "sample_dataframe_csv_leadtime_prod_test",
+  "signal_group": {
+    "id": "1584417161844",
+    "description": "dspSignalGroup",
+    "signalMetas": [
+      {
+        "signal": {
+          "id": 11,
+          "name": "bu",
+          "signalDataType": "TEXT",
+          "signalDefinition": {
+            "value_type": "ONE_TO_ONE",
+            "default_value": "NULL",
+            "aggregation_type": "NA",
+            "group_by": null,
+            "scopes": null
+          },
+          "signalBaseEntity": "bu"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "dummy_csv",
+          "description": "Created via API",
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "id": 12,
+          "name": "super_category",
+          "signalDataType": "TEXT",
+          "signalDefinition": {
+            "value_type": "ONE_TO_ONE",
+            "default_value": "NULL",
+            "aggregation_type": "NA",
+            "group_by": null,
+            "scopes": null
+          },
+          "signalBaseEntity": "super_category"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "dummy_csv",
+          "description": "Created via API",
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "id": 13,
+          "name": "category",
+          "signalDataType": "TEXT",
+          "signalDefinition": {
+            "value_type": "ONE_TO_ONE",
+            "default_value": "NULL",
+            "aggregation_type": "NA",
+            "group_by": null,
+            "scopes": null
+          },
+          "signalBaseEntity": "category"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "dummy_csv",
+          "description": "Created via API",
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      },
+      {
+        "signal": {
+          "id": 14,
+          "name": "lead_time",
+          "signalDataType": "DOUBLE",
+          "signalDefinition": {
+            "value_type": "ONE_TO_ONE",
+            "default_value": "NULL",
+            "aggregation_type": "NA",
+            "group_by": null,
+            "scopes": null
+          },
+          "signalBaseEntity": "lead_time"
+        },
+        "primary": false,
+        "dataTable": {
+          "id": "dummy_csv",
+          "description": "Created via API",
+          "dataSource": {
+            "id": "dcp_fact",
+            "configuration": {
+              "type": "HIVE",
+              "host_ip": "0.0.0.0",
+              "database": "dcp_fact"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "config": {
+    "dataframe_scope": [],
+    "signals": [
+      {
+        "id": 11,
+        "name": "bu",
+        "signalDataType": "TEXT",
+        "signalDefinition": {
+          "value_type": "ONE_TO_ONE",
+          "default_value": "NULL",
+          "aggregation_type": "NA",
+          "group_by": null,
+          "scopes": null
+        },
+        "signalBaseEntity": "bu"
+      },
+      {
+        "id": 12,
+        "name": "super_category",
+        "signalDataType": "TEXT",
+        "signalDefinition": {
+          "value_type": "ONE_TO_ONE",
+          "default_value": "NULL",
+          "aggregation_type": "NA",
+          "group_by": null,
+          "scopes": null
+        },
+        "signalBaseEntity": "super_category"
+      },
+      {
+        "id": 13,
+        "name": "category",
+        "signalDataType": "TEXT",
+        "signalDefinition": {
+          "value_type": "ONE_TO_ONE",
+          "default_value": "NULL",
+          "aggregation_type": "NA",
+          "group_by": null,
+          "scopes": null
+        },
+        "signalBaseEntity": "category"
+      },
+      {
+        "id": 14,
+        "name": "lead_time",
+        "signalDataType": "DOUBLE",
+        "signalDefinition": {
+          "value_type": "ONE_TO_ONE",
+          "default_value": "NULL",
+          "aggregation_type": "NA",
+          "group_by": null,
+          "scopes": null
+        },
+        "signalBaseEntity": "lead_time"
+      }
+    ]
+  },
+  "tableName": null
+}

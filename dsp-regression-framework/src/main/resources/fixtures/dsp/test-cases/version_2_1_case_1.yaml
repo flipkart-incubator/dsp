@@ -1,0 +1,113 @@
+---
+modelVersion: 2.1
+queries:
+  test_case_1_hive_query: "select * from dsp_regression.regression_test_table"
+workflow:
+  name: REGRESSION_SANDBOX_TEST_WF
+  description: "REGRESSION SANDBOX TEST WF"
+  dataframes:
+    regression_fdp_input_test_dataframe: hadoop://ru_category_lead_time_fact?Freshness=1000
+    regression_hive_table_input_test_dataframe: hive-table://dsp_regression.regression_test_table?refresh_id=1540047584
+    regression_ddp_table_input_test_dataframe: ddp-table://dcp_fact.regression_test_table?refresh_id=1540047584
+    regression_hive_query_input_test_dataframe: hive-query://test_case_1_hive_query?data_types=fsn:TEXT,date_dim_key:INTEGER,addtocartclicks:DOUBLE,buynowclicks:DOUBLE,primarylistingppvs:DOUBLE,secondarylistingppvs:DOUBLE,version_id:BIG_INTEGER,analytic_vertical:TEXT
+    regression_fdp_dataset_input_test_dataframe: hadoop-dataset://DP_Plan_FSN_Large?company=fki&namespace=demand&org=planning&version=1.0&upload_id=1b1688b3-3ec0-4545-8385-d270c67d2fea&data_types=supercategory:TEXT,fsn:TEXT,date:TEXT,sales_plan:DOUBLE
+    regression_hive_table_output_test_dataframe_step_1_case_1: hive-table://dsp_regression.hive_table_output_test_dataframe_step_1_case_1?is_intermediate=true
+  steps:
+    - name: "REGRESSION_TEST_STEP_1"
+      environment: "R_SERVE"
+      inputs:
+        - name: "regression_fdp_input_test_dataframe"
+          data_type: DATAFRAME
+        - name: "regression_hive_table_input_test_dataframe"
+          data_type: DATAFRAME
+        - name: "regression_ddp_table_input_test_dataframe"
+          data_type: DATAFRAME
+        - name: "regression_hive_query_input_test_dataframe"
+          data_type: DATAFRAME
+        - name: "regression_fdp_dataset_input_test_dataframe"
+          data_type: DATAFRAME
+        - name: "string_variable"
+          data_type: STRING
+          value: "string_variable_value"
+        - name: "double_variable"
+          data_type: DOUBLE
+          value: 5.5
+        - name: "int_variable"
+          data_type: INT
+          value: 11
+        - name: "datetime_variable"
+          data_type: DATE_TIME
+          value: "2014-11-15T18:32:17"
+        - name: "date_variable"
+          data_type: DATE
+          value: "2014-11-15"
+        - name: "long_variable"
+          data_type: LONG
+          value: "688887797400064883"
+        - name: "boolean_variable"
+          data_type: BOOLEAN
+          value: TRUE
+      outputs:
+        - name: "regression_hdfs_output_test_dataframe_step_1_case_1"
+          data_type: DATAFRAME
+          output_locations:
+            -
+            - hdfs://hadoopcluster2/projects/planning/dsp/hdfs-out
+        - name: "regression_hive_table_output_test_dataframe_step_1_case_1"
+          data_type: DATAFRAME
+          output_locations:
+            - hive://hive_table_output_test_dataframe_step_1_case_1?database=dsp_regression&data_types=prediction:DOUBLE
+        - name: "regression_ddp_table_output_test_dataframe_step_1_case_1"
+          data_type: DATAFRAME
+          output_locations:
+            - ddp://ddp_table_output_test_dataframe_step_1_case_1?database=dcp_fact&data_types=prediction:DOUBLE
+        - name: "regression_ceph_output_test_dataframe_step_1_case_1"
+          data_type: "DATAFRAME"
+          output_locations:
+            - ceph://Ceph_ALIAS?bucket=ekl_sapphire_client&path=REGRESSION_SANDBOX_TEST_WF&data_types=prediction:DOUBLE
+        - name: "regression_extra_output_test_dataframe_step_1_case_1"
+          data_type: "DATAFRAME"
+          output_locations:
+            - hdfs://hadoopcluster2/projects/planning/dsp/hdfs-out
+        - name: "regression_model_output_test_step_1_case_1"
+          data_type: MODEL
+          output_locations:
+            - hdfs://hadoopcluster2/projects/planning/dsp_prod/model_repo
+        - name: "regression_byte_array_output_test_step_1_case_1"
+          data_type: BYTEARRAY
+          output_locations:
+            - hdfs://hadoopcluster2/projects/planning/dsp_prod/model_repo
+      parent_step:
+        - null
+      resource_allocation:
+          cpu: S
+          memory: S
+      script_folder: "regression"
+      script_path: "version_2_1_step_1_case_1.r"
+      partitions:
+        - "analytic_vertical"
+    - name: "REGRESSION_TEST_STEP_2"
+      environment: "R_SERVE"
+      inputs:
+        - name: "regression_hive_table_input_test_dataframe"
+          data_type: DATAFRAME
+        - name: "regression_hive_table_output_test_dataframe_step_1_case_1"
+          data_type: DATAFRAME
+      outputs:
+        - name: "regression_hdfs_output_test_dataframe_step_2_case_1"
+          data_type: DATAFRAME
+          output_locations:
+            - hdfs://hadoopcluster2/projects/planning/dsp/hdfs-out
+      parent_step:
+        - REGRESSION_TEST_STEP_1
+      resource_allocation:
+        cpu: S
+        memory: S
+      script_folder: "regression"
+      script_path: "version_2_1_step_2_case_1.r"
+      partitions:
+        - "analytic_vertical"
+script_repo:
+  repo_url: "Flipkart/dsp-sandbox-trial"
+  commit_id: "regression_branch"
+  repo_local_path: ""

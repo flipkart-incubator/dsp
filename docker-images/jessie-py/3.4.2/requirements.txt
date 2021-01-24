@@ -1,0 +1,6 @@
+numpy==1.15.2
+PyYAML==3.13
+pandas==0.20.3
+joblib==0.11
+deap==1.2
+psutil==5.2.2

@@ -1,0 +1,35 @@
+{
+  "createdAt": 1533874280452,
+  "updatedAt": null,
+  "id": 7796793,
+  "subscriptionId": null,
+  "name": "test_workflow_group",
+  "description": "test workflow group",
+  "workflowGroupMeta": {
+    "id": 396470,
+    "callbackEntities": null,
+    "callbackUrl": null,
+    "warningTimeForNotification": 10800000,
+    "killTimeForNotification": 21600000
+  },
+  "workflowsList": [
+    {
+      "createdAt": 1533874280453,
+      "updatedAt": null,
+      "version": 8.0,
+      "draft": true,
+      "id": 8457012,
+      "name": "test_workflow",
+      "description": null,
+      "parentWorkFlow": null,
+      "dataFrames": [],
+      "workflowExecutionType": "TRAIN_AND_EXECUTE",
+      "retries": 3,
+      "workflowPartitions": null,
+      "preEmptable": true
+    }
+  ],
+  "draft": true,
+  "version": 8.0,
+  "active": false
+}

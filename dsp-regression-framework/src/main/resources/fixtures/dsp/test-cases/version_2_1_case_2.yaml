@@ -1,0 +1,67 @@
+---
+modelVersion: 2.1
+workflow:
+  name: REGRESSION_SANDBOX_TEST_WF
+  description: "REGRESSION SANDBOX TEST WF"
+  dataframes:
+    regression_hive_table_input_test_dataframe: dataframe:///regression_hive_table_input_test_dataframe
+    regression_csv_in_memory_input_test_dataframe: file://SMALL_CSV_FILE_LOCAL_PATH?data_types=analytic_vertical:TEXT,fsnkp:TEXT,date_dim_key:TEXT,addtocartclicks:DOUBLE,buynowclicks:DOUBLE,primarylistingppvs:DOUBLE,secondarylistingppvs:DOUBLE&csv_format=Oracle
+    regression_csv_map_reduce_input_test_dataframe: file://LARGE_CSV_FILE_LOCAL_PATH?data_types=analytic_vertical:TEXT,fsnkp:TEXT,date_dim_key:TEXT,addtocartclicks:DOUBLE,buynowclicks:DOUBLE,primarylistingppvs:DOUBLE,secondarylistingppvs:DOUBLE&csv_format=Oracle
+    regression_hive_table_output_test_dataframe_step_1_case_2: hive-table://dsp_regression.hive_table_output_test_dataframe_step_1_case_2?is_intermediate=true
+  steps:
+    - name: "REGRESSION_TEST_STEP_1"
+      environment: "R_SERVE"
+      inputs:
+        - name: "regression_hive_table_input_test_dataframe"
+          data_type: DATAFRAME
+        - name: "regression_csv_in_memory_input_test_dataframe"
+          data_type: DATAFRAME
+        - name: "regression_csv_map_reduce_input_test_dataframe"
+          data_type: DATAFRAME
+      outputs:
+        - name: "regression_hive_table_output_test_dataframe_step_1_case_2"
+          data_type: DATAFRAME
+          output_locations:
+            - hive://hive_table_output_test_dataframe_step_1_case_2?database=dsp_regression&data_types=prediction:DOUBLE
+        - name: "regression_hdfs_1_output_test_dataframe_step_1_case_2"
+          data_type: DATAFRAME
+          output_locations:
+            - hdfs://hadoopcluster2/projects/planning/dsp/hdfs-out
+        - name: "regression_hdfs_2_output_test_dataframe_step_1_case_2"
+          data_type: DATAFRAME
+          output_locations:
+            - hdfs://hadoopcluster2/projects/planning/dsp/hdfs-out
+      parent_step:
+        - null
+      resource_allocation:
+          cpu: S
+          memory: S
+      script_folder: "regression"
+      script_path: "version_2_1_step_1_case_2.r"
+      partitions:
+        - "analytic_vertical"
+    - name: "REGRESSION_TEST_STEP_2"
+      environment: "R_SERVE"
+      inputs:
+        - name: "regression_hive_table_input_test_dataframe"
+          data_type: DATAFRAME
+        - name: "regression_hive_table_output_test_dataframe_step_1_case_2"
+          data_type: DATAFRAME
+      outputs:
+        - name: "regression_hdfs_output_test_dataframe_step_2_case_2"
+          data_type: DATAFRAME
+          output_locations:
+            - hdfs://hadoopcluster2/projects/planning/dsp/hdfs-out
+      parent_step:
+        - REGRESSION_TEST_STEP_1
+      resource_allocation:
+        cpu: S
+        memory: S
+      script_folder: "regression"
+      script_path: "version_2_1_step_2_case_2.r"
+      partitions:
+        - "analytic_vertical"
+script_repo:
+  repo_url: "Flipkart/dsp-sandbox-trial"
+  commit_id: "regression_branch"
+  repo_local_path: ""

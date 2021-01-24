@@ -1,0 +1,62 @@
+#!/bin/bash
+set -e
+# Source debconf library.
+. /usr/share/debconf/confmodule
+
+db_get hadoop-infra-hadoop-conf/cluster_name || true
+
+execFile=/usr/local/hadoop-infra-hadoop-conf/bin/run
+chown root:root $execFile
+
+syncCommand=""
+
+cp /usr/local/hadoop-infra-hadoop-conf/conf/hadoop-infra-hadoop-conf-bucket.tmpl /etc/confd/templates/hadoop-infra-hadoop-conf-bucket.tmpl
+cp /usr/local/hadoop-infra-hadoop-conf/conf/hadoop-infra-hadoop-conf-bucket.toml /etc/confd/conf.d/hadoop-infra-hadoop-conf-bucket.toml
+
+IFS=',' read -r -a clusters <<< "hadoopcluster2"
+
+for cluster in "${clusters[@]}"
+do
+    /bin/sed "s/CLUSTER_NAME/$cluster/g" /etc/confd/templates/hadoop-infra-hadoop-conf-bucket.tmpl | sed 1q >> /etc/confd/templates/hadoop-infra-hadoop-conf-bucket.tmpl
+    /bin/sed -i "s/CLUSTER_NAME-hostnames-bucket/CLUSTER_NAME-hostnames-bucket\",\"$cluster-hostnames-bucket/g" /etc/confd/conf.d/hadoop-infra-hadoop-conf-bucket.toml
+done
+
+/bin/sed -i "/CLUSTER_NAME/d" /etc/confd/templates/hadoop-infra-hadoop-conf-bucket.tmpl
+/bin/sed -i "s/\"CLUSTER_NAME-hostnames-bucket\",//g" /etc/confd/conf.d/hadoop-infra-hadoop-conf-bucket.toml
+
+#/etc/init.d/fk-config-service-confd restart
+#/etc/init.d/fk-ops-hosts-populator restart
+
+sleep_time=10
+echo "Waiting for ${sleep_time} secs for hosts-populator to populate /etc/hosts entries"
+#sleep ${sleep_time}
+
+
+for cluster in "${clusters[@]}"
+do
+    hadoopConfDirForCluster=/etc/hadoop/conf.${cluster}
+
+    if [ ! -d ${hadoopConfDirForCluster} ]; then
+        if [ -e ${hadoopConfDirForCluster} ]; then
+            rm ${hadoopConfDirForCluster}
+        fi
+        mkdir -p ${hadoopConfDirForCluster}
+    fi
+
+    if [ -d /etc/hadoop/conf ]; then
+        rm -Rf /etc/hadoop/conf
+    fi
+
+    syncCommand="$syncCommand ${execFile} ${cluster} /hdp/client-configs/hadoop-conf/${cluster}/ ${hadoopConfDirForCluster}/ http://0.0.0.0 ;"
+done
+
+eval $syncCommand
+# Make first cluster as default
+update-alternatives --install /etc/hadoop/conf hadoop-conf /etc/hadoop/conf.${clusters[0]} 50
+update-alternatives --set hadoop-conf /etc/hadoop/conf.${clusters[0]}
+
+
+echo "If it fails, manually run following
+#/etc/init.d/fk-config-service-confd restart
+#/etc/init.d/fk-ops-hosts-populator restart
+$syncCommand"

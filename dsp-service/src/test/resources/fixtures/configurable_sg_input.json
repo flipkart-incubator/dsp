@@ -1,0 +1,44 @@
+{
+  "dataFrames": [
+    {
+      "name": "abc6",
+      "config": {
+        "dataframe_scope": [],
+        "signals": [
+          {
+            "name": "datatableRashmiMangesh123",
+            "signalDataType": "BIG_INTEGER",
+            "signalDefinition": {
+              "value_type": "ONE_TO_ONE",
+              "default_value": 1,
+              "aggregation_type": "NA",
+              "group_by": null,
+              "scopes": null
+            },
+            "signalBaseEntity": "bs",
+            "isPrimary": false,
+            "isVisible": true,
+            "dataTableName": "datatableRashmiMangesh123",
+            "dataSourceID": "dcp_fact"
+          },
+          {
+            "name": "datatableRashmi1Mangesh123",
+            "signalDataType": "BIG_INTEGER",
+            "signalDefinition": {
+              "value_type": "ONE_TO_ONE",
+              "default_value": 1,
+              "aggregation_type": "NA",
+              "group_by": null,
+              "scopes": null
+            },
+            "signalBaseEntity": "bs",
+            "isPrimary": false,
+            "isVisible": false,
+            "dataTableName": "datatableRashmi1Mangesh123",
+            "dataSourceID": "dcp_fact"
+          }
+        ]
+      }
+    }
+  ]
+}

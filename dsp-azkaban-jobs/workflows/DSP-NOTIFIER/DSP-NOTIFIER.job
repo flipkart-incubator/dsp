@@ -1,0 +1,10 @@
+job.class=com.flipkart.dsp.notifier.DspNotifier
+azkaban.should.proxy=false
+user.to.proxy=fk-ip-data-service
+proxy.user=fk-ip-data-service
+type=java
+classpath=/grid/dsp-azkaban-jobs/scheduleJobs/dsp-notification-1.0-SNAPSHOT.jar
+dsp.svc.buckets=dsp-prod
+
+
+

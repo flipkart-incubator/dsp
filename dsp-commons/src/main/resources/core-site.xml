@@ -1,0 +1,175 @@
+<!--Mon Jun 13 19:40:18 2016-->
+<configuration>
+
+    <property>
+        <name>datanode_jmx_port</name>
+        <value>9008</value>
+    </property>
+
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://hadoopcluster2</value>
+        <final>true</final>
+    </property>
+
+    <property>
+        <name>fs.trash.checkpoint.interval</name>
+        <value>15</value>
+    </property>
+
+    <property>
+        <name>fs.trash.interval</name>
+        <value>1440</value>
+    </property>
+
+    <property>
+        <name>ha.failover-controller.active-standby-elector.zk.op.retries</name>
+        <value>120</value>
+    </property>
+
+    <property>
+        <name>ha.failover-controller.new-active.rpc-timeout.ms</name>
+        <value>180000</value>
+    </property>
+
+    <property>
+        <name>ha.zookeeper.quorum</name>
+        <value>prod-hadoop-hadoopcluster2-jn-0001:2181,prod-hadoop-hadoopcluster2-jn-0001:2181,prod-hadoop-hadoopcluster2-jn-0001:2181,prod-hadoop-hadoopcluster2-jn-0001:2181,prod-hadoop-hadoopcluster2-jn-0001:2181</value>
+    </property>
+
+    <property>
+        <name>hadoop.http.authentication.simple.anonymous.allowed</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>hadoop.proxyuser.hcat.groups</name>
+        <value>users</value>
+    </property>
+
+    <property>
+        <name>hadoop.proxyuser.hcat.hosts</name>
+        <value>prod-hadoop-hadoopcluster2-gw-0001,prod-hadoop-hadoopcluster2-gw-0002</value>
+    </property>
+
+    <property>
+        <name>hadoop.proxyuser.hdfs.groups</name>
+        <value>*</value>
+    </property>
+
+    <property>
+        <name>hadoop.proxyuser.hdfs.hosts</name>
+        <value>*</value>
+    </property>
+
+    <property>
+        <name>hadoop.proxyuser.hive.groups</name>
+        <value>users</value>
+    </property>
+
+    <property>
+        <name>hadoop.proxyuser.hive.hosts</name>
+        <value>prod-hadoop-hadoopcluster2-gw-0001,prod-hadoop-hadoopcluster2-gw-0002</value>
+    </property>
+
+    <property>
+        <name>hadoop.proxyuser.oozie.groups</name>
+        <value>*</value>
+    </property>
+
+    <property>
+        <name>hadoop.proxyuser.oozie.hosts</name>
+        <value>prod-hadoop-hadoopcluster2-gw-0001,prod-hadoop-hadoopcluster2-gw-0002</value>
+    </property>
+
+    <property>
+        <name>hadoop.security.auth_to_local</name>
+        <value>DEFAULT</value>
+    </property>
+
+    <property>
+        <name>hadoop.security.authentication</name>
+        <value>simple</value>
+    </property>
+
+    <property>
+        <name>hadoop.security.authorization</name>
+        <value>false</value>
+    </property>
+
+    <property>
+        <name>io.compression.codec.lzo.class</name>
+        <value>com.hadoop.compression.lzo.LzoCodec</value>
+    </property>
+
+    <property>
+        <name>io.compression.codecs</name>
+        <value>org.apache.hadoop.io.compress.SnappyCodec,org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.BZip2Codec,com.hadoop.compression.lzo.LzoCodec,com.hadoop.compression.lzo.LzopCodec,com.hadoop.compression.fourmc.Lz4Codec,com.hadoop.compression.fourmc.Lz4MediumCodec,com.hadoop.compression.fourmc.Lz4HighCodec,com.hadoop.compression.fourmc.Lz4UltraCodec,com.hadoop.compression.fourmc.FourMcCodec,com.hadoop.compression.fourmc.FourMcMediumCodec,com.hadoop.compression.fourmc.FourMcHighCodec,com.hadoop.compression.fourmc.FourMcUltraCodec</value>
+    </property>
+
+    <property>
+        <name>io.file.buffer.size</name>
+        <value>131072</value>
+    </property>
+
+    <property>
+        <name>io.serializations</name>
+        <value>org.apache.hadoop.io.serializer.WritableSerialization</value>
+    </property>
+
+    <property>
+        <name>ipc.client.connect.max.retries</name>
+        <value>50</value>
+    </property>
+
+    <property>
+        <name>ipc.client.connection.maxidletime</name>
+        <value>30000</value>
+    </property>
+
+    <property>
+        <name>ipc.client.idlethreshold</name>
+        <value>8000</value>
+    </property>
+
+    <property>
+        <name>ipc.server.tcpnodelay</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobtracker.webinterface.trusted</name>
+        <value>false</value>
+    </property>
+
+    <property>
+        <name>namenode_jmx_port</name>
+        <value>9006</value>
+    </property>
+
+    <property>
+        <name>net.topology.script.file.name</name>
+        <value>/etc/hadoop/conf/topology.py</value>
+    </property>
+
+    <property>
+        <name>proxyuser_group</name>
+        <value>users</value>
+    </property>
+
+    <property>
+        <name>rpc.metrics.percentiles.intervals</name>
+        <value>60</value>
+    </property>
+
+    <property>
+        <name>rpc.metrics.quantile.enable</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>yarn_jmx_port</name>
+        <value>9007</value>
+    </property>
+
+</configuration>

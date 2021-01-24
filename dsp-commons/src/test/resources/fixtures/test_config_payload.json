@@ -1,0 +1,209 @@
+{
+  "workflowDetails":
+  {
+    "workflow": {
+      "name": "Rash4",
+      "description": "Model Execution and Forecast Generation for Demand Forecasting",
+      "useCase": "dp_exec_with_events_usecase",
+      "workflowExecutionType": "ML_EXECUTE",
+      "executionCluster": "MESOS",
+      "retries": 3,
+      "executionRole": "PRODUCTION",
+      "sgUseCase": {
+        "id": "dp_exec_with_events_usecase",
+        "partitionKeys": [
+          {
+            "id": "supercategory"
+          }
+        ]
+      },
+      "preEmptable": true
+    },
+    "workflowMeta": {
+      "meta": {
+        "primaryQueue": "execution_prod",
+        "feHiveTableName": "dcp_fact.fe_dpv1_with_events_fact",
+        "hiveTableName": "dcp_fact.forecast_with_events_fact",
+        "usecase": "Demand_Planning",
+        "partition_scope": {
+          "refresh_id": "refresh_id",
+          "supercategory": "super_category"
+        }
+      }
+    },
+    "pipelines": [
+      {
+        "pipeline": {
+          "description": "Execution",
+          "inputGranularityId": "SC X DAY",
+          "outputGranularityId": "SC X DAY",
+          "criteria": "[{\"id\":\"sc\",\"range_end\":null,\"range_start\":null,\"type\":\"IN\",\"values_in\":[\"*\"]}]",
+          "signalGroupId": -2
+        },
+        "pipelineSteps": [
+          {
+            "pipelineStepType": "FE_EXECUTE",
+            "prevStepAlias": null,
+            "currentStepAlias": "a",
+            "script": {
+              "id": 43,
+              "location": "production/DEMAND_PLANNING/v1/FE_execute.R",
+              "executionEnvironmentEnum": "R_SERVE",
+              "inputVariables": [
+                {
+                  "name": "csv_path",
+                  "data_type": "DATAFRAME"
+                },
+                {
+                  "name": "future_csv_path",
+                  "data_type": "DATAFRAME"
+                }
+              ],
+              "outputVariables": [
+                {
+                  "name": "future_df_eng",
+                  "data_type": "BYTEARRAY"
+                }
+              ],
+              "metadata": "dummy"
+            },
+            "pipelineStepConfig": "",
+            "pipelineStepResources": {
+              "BASE_MEMORY": 2000,
+              "BASE_CPU": 1,
+              "TRAIN_MEM_COEFF": 30,
+              "EXEC_MEM_COEFF": 0,
+              "TRAIN_CPU_COEFF": 0,
+              "EXEC_CPU_COEFF": 0
+            }
+          },
+          {
+            "pipelineStepType": "MODEL_TRAINER",
+            "prevStepAlias": "a",
+            "currentStepAlias": "b",
+            "script": {
+              "id": 111,
+              "location": "production/DEMAND_PLANNING/v1/FE_execute.R",
+              "executionEnvironmentEnum": "R_SERVE",
+              "inputVariables": [
+                {
+                  "name": "csv_path",
+                  "data_type": "DATAFRAME"
+                },
+                {
+                  "name": "future_csv_path",
+                  "data_type": "DATAFRAME"
+                }
+              ],
+              "outputVariables": [
+                {
+                  "name": "future_df_eng",
+                  "data_type": "BYTEARRAY"
+                }
+              ],
+              "metadata": "dummy"
+            },
+            "pipelineStepConfig": "",
+            "pipelineStepResources": {
+              "BASE_MEMORY": 2000,
+              "BASE_CPU": 1,
+              "TRAIN_MEM_COEFF": 30,
+              "EXEC_MEM_COEFF": 0,
+              "TRAIN_CPU_COEFF": 0,
+              "EXEC_CPU_COEFF": 0
+            }
+          },
+          {
+            "pipelineStepType": "PURE_MODEL_EXECUTOR",
+            "prevStepAlias": "a",
+            "currentStepAlias": "c",
+            "script": {
+              "id": 114,
+              "location": "production/DEMAND_PLANNING/v1/FE_execute.R",
+              "executionEnvironmentEnum": "R_SERVE",
+              "inputVariables": [
+                {
+                  "name": "csv_path",
+                  "data_type": "DATAFRAME"
+                },
+                {
+                  "name": "future_csv_path",
+                  "data_type": "DATAFRAME"
+                }
+              ],
+              "outputVariables": [
+                {
+                  "name": "future_df_eng",
+                  "data_type": "BYTEARRAY"
+                }
+              ],
+              "metadata": "dummy"
+            },
+            "pipelineStepConfig": "",
+            "pipelineStepResources": {
+              "BASE_MEMORY": 2000,
+              "BASE_CPU": 1,
+              "TRAIN_MEM_COEFF": 30,
+              "EXEC_MEM_COEFF": 0,
+              "TRAIN_CPU_COEFF": 0,
+              "EXEC_CPU_COEFF": 0
+            }
+          },
+          {
+            "pipelineStepType": "MODEL_EXECUTOR",
+            "prevStepAlias": "b",
+            "currentStepAlias": "d",
+            "script": {
+              "id": 3195,
+              "location": "production/DEMAND_PLANNING/v1/executor.R",
+              "executionEnvironmentEnum": "R_SERVE",
+              "inputVariables": [
+                {
+                  "name": "model_object",
+                  "data_type": "MODEL"
+                },
+                {
+                  "name": "future_df_eng",
+                  "data_type": "BYTEARRAY"
+                }
+              ],
+              "outputVariables": [
+                {
+                  "name": "forecasted_df",
+                  "data_type": "DATAFRAME",
+                  "additional_params": {
+                    "type": "PANDAS_DATAFRAME",
+                    "hive_table": "dcp_fact.forecast_with_events_fact"
+                  }
+                }
+              ],
+              "metadata": "dummy"
+            },
+            "pipelineStepConfig": "",
+            "pipelineStepResources": {
+              "BASE_MEMORY": 1200,
+              "BASE_CPU": 2,
+              "TRAIN_MEM_COEFF": 80,
+              "EXEC_MEM_COEFF": 150,
+              "TRAIN_CPU_COEFF": 1,
+              "EXEC_CPU_COEFF": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "scope": "[{\"id\":\"super_category\",\"range_end\":null,\"range_start\":null,\"type\":null,\"values_in\":[\"Electronics%23Gaming\"]},{\"id\":\"fulfillment_type\",\"range_end\":null,\"range_start\":null,\"type\":null,\"values_in\":[\"ALPHA\"]}]",
+  "csvLocation": {
+    "visit_share_dataframe_dup": "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__120/super_category=Electronics%23Gaming/000000_0",
+    "dp_funnel_unit_share_dataframe": "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__119/super_category=Electronics%23Gaming/fulfillment_type=ALPHA/000000_0"
+  },
+  "futureCSVLocation": null,
+  "pipelineId": 23940,
+  "pipelineStepId": 23941,
+  "timestamp": "2018-02-06T12:11:58.375Z",
+  "workflowExecutionId": "90cde603-9a3d-4ac6-8c10-7834ff1000e4",
+  "pipelineExecutionId": "fe6c3722-a521-45fc-8769-f52512c64d99",
+  "refreshId": 4229712,
+  "totalNumberOfAlgos": 1
+}

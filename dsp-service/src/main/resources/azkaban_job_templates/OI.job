@@ -1,0 +1,13 @@
+azkaban.flow.flowid=JobDriver
+job.class=com.flipkart.dsp.jobs.JobDriverV2
+azkaban.should.proxy=false
+user.to.proxy=fk-ip-data-service
+proxy.user=fk-ip-data-service
+type=java
+classpath=/usr/lib/hadoop/lib/*,/usr/hdp/2.4.0.0-169/hadoop/lib/native/Linux-amd64-64,/grid/dsp-azkaban-jobs/ENVIRONMENT/JAR_VERSION/dsp-azkaban-jobs-1.0-SNAPSHOT-JAR_VERSION.jar,/usr/hdp/2.4.0.0-169/hadoop/conf,/usr/hdp/2.4.0.0-169/hadoop/lib/*,/usr/hdp/2.4.0.0-169/hadoop/.//*,/usr/hdp/2.4.0.0-169/hadoop-hdfs/./,/usr/hdp/2.4.0.0-169/hadoop-hdfs/lib/*,/usr/hdp/2.4.0.0-169/hadoop-hdfs/.//*,/usr/hdp/2.4.0.0-169/hadoop-yarn/lib/*,/usr/hdp/2.4.0.0-169/hadoop-yarn/.//*,/usr/hdp/2.4.0.0-169/hadoop-mapreduce/lib/*,/usr/hdp/2.4.0.0-169/hadoop-mapreduce/.//*,/usr/hdp/current/hadoop-mapreduce-client/*,/usr/share/fk-bigfoot-4mc/*,/usr/hdp/2.4.0.0-169/tez/*,/usr/hdp/2.4.0.0-169/tez/lib/*,/usr/hdp/2.4.0.0-169/tez/conf
+JobDriver.applicationClass=com.flipkart.dsp.jobs.AzkabanOutputIngestionNode
+JobDriver.applicationClass.args=WORKFLOW
+dsp.svc.buckets=BUCKET
+dependencies=DEPENDENCY
+retries=3
+azkaban.host.ip=AZKABAN_HOST_IP

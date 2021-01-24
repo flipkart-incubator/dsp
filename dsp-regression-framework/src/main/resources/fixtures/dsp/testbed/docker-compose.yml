@@ -1,0 +1,105 @@
+version: "2"
+services:
+  mesos_slave:
+    image: 0.0.0./mesos_agent_dockerfile:10.23
+    ports:
+      - "5051:5051"
+    privileged: true
+    logging:
+      driver : journald
+    container_name: mesos_slavee_compose
+    depends_on:
+      - mesos_master
+    environment:
+      - EXECUTION_ENVIRONMENT
+      - MESOS_AGENT_DEBIAN_VERSION
+      - MESOS_AGENT_PACKAGE_VERSION
+      - HOST_MACHINE_IP=${HOST_MACHINE_IP}
+    links:
+      - mesos_master
+    volumes:
+      - /etc/hosts:/etc/temp_t
+      - /var/lib/docker:/var/lib/docker
+    networks:
+      app_net:
+        ipv4_address: 0.0.0.
+  mesos_master:
+    image: 0.0.0./mesos_master_dockerfile:8.2
+    ports:
+      - 5050:5050
+    logging:
+      driver : journald
+    container_name: mesos_master_compose
+    environment:
+      - HOST_MACHINE_IP=${HOST_MACHINE_IP}
+    networks:
+      app_net:
+        ipv4_address: 0.0.0.
+  service:
+    image: 0.0.0./service_dockerfile:10.15
+    container_name: service_compose
+    logging:
+      driver: journald
+    ports:
+      - "9090:9090"
+      - "9091:9091"
+    depends_on:
+      - mysql
+      - mesos_master
+      - azkaban
+    volumes:
+      - /etc/service/stream-relay.svc:/etc/service/stream-relay.svc
+      - /etc/service/fk-config-service-confd:/etc/service/fk-config-service-confd
+      - /etc/cron.d/stream-relay-logrotate:/etc/cron.d/stream-relay-logrotate
+      - /etc/rsyslog.d/stream-relay-hosts.sh:/etc/rsyslog.d/stream-relay-hosts.sh
+      - /etc/init.d/cosmos-jmx:/etc/init.d/cosmos-jmx
+      - /etc/service/cosmos-jmx:/etc/service/cosmos-jmx
+      - /etc/hosts:/etc/temp_t
+    environment:
+      - SERVICE_BUCKET_POSTFIX
+      - SERIVCE_DEBIAN_VERSION
+      - EXECUTION_ENVIRONMENT
+    networks:
+      app_net:
+        ipv4_address: 0.0.0.
+  mysql:
+    image: 0.0.0./mysql_dockerfile:8.5
+    container_name: mysql_compose
+    ports:
+      - "3306:3306"
+    logging:
+      driver: journald
+    networks:
+      app_net:
+        ipv4_address: 0.0.0.
+  azkaban:
+    image: 0.0.0./azkaban_dockerfile:20.37
+    container_name: azkaban_compose
+    ports:
+      - 8443:8443
+    depends_on:
+      - mysql
+    logging:
+      driver: journald
+    environment:
+      - HOST_MACHINE_IP=${HOST_MACHINE_IP}
+      - REGRESSION_AZKABAN_DEBIAN_VERSION
+      - AZKABAN_PACKAGE_VERSION
+      - EXECUTION_ENVIRONMENT
+    volumes:
+      - /etc/hosts:/etc/temp_t
+    links:
+      - mysql
+    networks:
+      app_net:
+        ipv4_address: 0.0.0.
+networks:
+  app_net:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
+    ipam:
+      driver: default
+      config:
+      - subnet: 0.0.0./24
+        gateway: 0.0.0.

@@ -1,0 +1,89 @@
+{
+  "request_id": 0,
+  "test_run": false,
+  "tables": {},
+  "overrides": {
+    "WORKFLOW_NAME": {
+      "partitionFilter": [],
+      "dataframeOverrideMap": {
+        "regression_fdp_input_test_dataframe": {
+          "type": "FDPDataframeOverride",
+          "fdpFactName": "ru_category_lead_time_fact",
+          "refreshInterval": 1000
+        },
+        "regression_hive_table_input_test_dataframe": {
+          "type": "HiveDataframeOverride",
+          "database": "dsp_regression",
+          "tableName": "regression_test_table",
+          "refreshId": 1540047584,
+          "isIntermediate": false
+        },
+        "regression_ddp_table_input_test_dataframe": {
+          "type": "DDPDataframeOverride",
+          "database": "dcp_fact",
+          "tableName": "regression_test_table",
+          "refreshId": 1540047584
+        },
+        "regression_hive_query_input_test_dataframe": {
+          "type": "HiveQueryDataframeOverride",
+          "query": "select * from dsp_regression.regression_test_table",
+          "columnMapping": {
+            "fsn": "TEXT",
+            "date_dim_key": "INTEGER",
+            "addtocartclicks": "DOUBLE",
+            "buynowclicks": "DOUBLE",
+            "primarylistingppvs": "DOUBLE",
+            "secondarylistingppvs": "DOUBLE",
+            "version_id": "BIG_INTEGER",
+            "analytic_vertical": "TEXT"
+          }
+        },
+        "regression_fdp_dataset_input_test_dataframe": {
+          "type": "FDPDatasetDataframeOverride",
+          "company": "fki",
+          "id": "DP_Plan_FSN_Large",
+          "namespace": "demand",
+          "org": "planning",
+          "version": "1.0",
+          "uploadId": "1b1688b3-3ec0-4545-8385-d270c67d2fea"
+        }
+      },
+      "objectOverrideList": [{
+        "type": "ScriptVariableOverride",
+        "name": "string_variable",
+        "dataType": "STRING",
+        "value": "String Variable Value"
+      }, {
+        "type": "ScriptVariableOverride",
+        "name": "double_variable",
+        "dataType": "DOUBLE",
+        "value": 5.5
+      }, {
+        "type": "ScriptVariableOverride",
+        "name": "int_variable",
+        "dataType": "INT",
+        "value": 11
+      }, {
+        "type": "ScriptVariableOverride",
+        "name": "datetime_variable",
+        "dataType": "DATE_TIME",
+        "value": "2014-11-15T18:32:17"
+      }, {
+        "type": "ScriptVariableOverride",
+        "name": "date_variable",
+        "dataType": "DATE",
+        "value": "2014-11-15"
+      }, {
+        "type": "ScriptVariableOverride",
+        "name": "long_variable",
+        "dataType": "LONG",
+        "value": "688887797400064883"
+      }, {
+        "type": "ScriptVariableOverride",
+        "name": "boolean_variable",
+        "dataType": "BOOLEAN",
+        "value": true
+      }]
+    }
+  }
+}

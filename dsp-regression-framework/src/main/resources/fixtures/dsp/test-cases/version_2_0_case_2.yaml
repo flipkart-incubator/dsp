@@ -1,0 +1,51 @@
+
+---
+modelVersion: 2.0
+flow:
+  id: REGRESSION_SANDBOX_TEST_WFG
+  description: "REGRESSION SANDBOX TEST WFG"
+
+workflows:
+  - id: REGRESSION_SANDBOX_TEST_WF
+    dataframes:
+      regression_hive_table_input_test_dataframe: dataframe:///regression_hive_table_input_test_dataframe
+      regression_csv_in_memory_input_test_dataframe: file://SMALL_CSV_FILE_LOCAL_PATH?data_types=analytic_vertical:TEXT,fsnkp:TEXT,date_dim_key:TEXT,addtocartclicks:DOUBLE,buynowclicks:DOUBLE,primarylistingppvs:DOUBLE,secondarylistingppvs:DOUBLE&csv_format=Oracle
+      regression_csv_map_reduce_input_test_dataframe: file://LARGE_CSV_FILE_LOCAL_PATH?data_types=analytic_vertical:TEXT,fsnkp:TEXT,date_dim_key:TEXT,addtocartclicks:DOUBLE,buynowclicks:DOUBLE,primarylistingppvs:DOUBLE,secondarylistingppvs:DOUBLE&csv_format=Oracle
+    steps:
+      - id: "REGRESSION_TEST_STEP_1"
+        type: MODEL_EXECUTOR
+        environment: "PYTHON3"
+        inputs:
+          - name: "regression_hive_table_input_test_dataframe"
+            data_type: DATAFRAME
+          - name: "regression_csv_in_memory_input_test_dataframe"
+            data_type: DATAFRAME
+          - name: "regression_csv_map_reduce_input_test_dataframe"
+            data_type: DATAFRAME
+        outputs:
+          - name: "regression_hdfs_1_output_test_dataframe_case_2"
+            data_type: DATAFRAME
+            output_locations:
+              - hdfs://hadoopcluster2/projects/planning/dsp/hdfs-out
+          - name: "regression_hdfs_2_output_test_dataframe_case_2"
+            data_type: DATAFRAME
+            output_locations:
+              - hdfs://hadoopcluster2/projects/planning/dsp/hdfs-out
+          - name: "regression_hdfs_3_output_test_dataframe_case_2"
+            data_type: DATAFRAME
+            output_locations:
+              - hdfs://hadoopcluster2/projects/planning/dsp/hdfs-out
+        parent_step:
+          - null
+        resource_allocation:
+          cpu: S
+          memory: S
+        script_folder: "test-cases"
+        script_path: "version_2_0_case_2.py"
+    workflow_execution_type: TRAIN_AND_EXECUTE
+    output_partitions:
+    input_partitions:
+script_repo:
+  repo_url: ""
+  commit_id: ""
+  repo_local_path: "LOCAL_SCRIPT_FOLDER"

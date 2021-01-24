@@ -1,0 +1,9 @@
+azkaban.flow.flowid=JobDriver
+job.class=com.flipkart.dsp.jobs.JobDriverV2
+azkaban.should.proxy=false
+user.to.proxy=fk-ip-data-service
+proxy.user=fk-ip-data-service
+type=java
+JobDriver.applicationClass=com.flipkart.dsp.jobs.AzkabanImageDetailsNode
+classpath=/grid/dsp-azkaban-jobs/scheduleJobs/dsp-azkaban-jobs-1.0-SNAPSHOT.jar
+dsp.svc.buckets=dsp-prod

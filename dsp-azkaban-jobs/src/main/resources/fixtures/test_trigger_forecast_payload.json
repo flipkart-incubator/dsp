@@ -1,0 +1,927 @@
+{
+  "usecase": "SGUseCase(sgUseCase=dp_funnel_unit_share_usecase)",
+  "payload_set": [
+    {
+      "request_id": 4220435,
+      "data_frame_id": "dp_funnel_unit_share_dataframe",
+      "column_metadata": {
+        "super_category": "IN",
+        "fulfillment_type": "IN",
+        "day": "RANGE"
+      },
+      "dataframes": {
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23AutoAccessorys\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23AutoAccessorys/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23AutoAccessorys\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23AutoAccessorys/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23AutoAccessorys\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23AutoAccessorys/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23BooksMedia\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23BooksMedia/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23BooksMedia\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23BooksMedia/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23BooksMedia\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23BooksMedia/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23FMCG\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23FMCG/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23FMCG\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23FMCG/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23FMCG\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23FMCG/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23PersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23PersonalCare/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23PersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23PersonalCare/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23PersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23PersonalCare/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23SportFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23SportFitness/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23SportFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23SportFitness/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23SportFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23SportFitness/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23ToysAndBabyCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23ToysAndBabyCare/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23ToysAndBabyCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23ToysAndBabyCare/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23ToysAndBabyCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=BGM%23ToysAndBabyCare/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicAccessory%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=ElectronicAccessory%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicAccessory%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=ElectronicAccessory%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicAccessory%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=ElectronicAccessory%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicDevices%23CCCAcc\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=ElectronicDevices%23CCCAcc/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicDevices%23CCCAcc\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=ElectronicDevices%23CCCAcc/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicDevices%23CCCAcc\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=ElectronicDevices%23CCCAcc/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Audio\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Audio/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Audio\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Audio/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Audio\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Audio/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Automobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Automobile/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Automobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Automobile/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Automobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Automobile/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Camera\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Camera/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Camera\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Camera/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Camera\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Camera/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Gaming\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Gaming/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Gaming\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Gaming/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Gaming\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Gaming/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23IOT\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23IOT/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23IOT\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23IOT/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23IOT\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23IOT/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23ITAccessory/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23ITAccessory/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23ITAccessory/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITPeripherals\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23ITPeripherals/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITPeripherals\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23ITPeripherals/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITPeripherals\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23ITPeripherals/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23LaptopAndDesktop\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23LaptopAndDesktop/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23LaptopAndDesktop\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23LaptopAndDesktop/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23LaptopAndDesktop\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23LaptopAndDesktop/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23MobileAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23MobileAccessory/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23MobileAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23MobileAccessory/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23MobileAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23MobileAccessory/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23PersonalHealthCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23PersonalHealthCare/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23PersonalHealthCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23PersonalHealthCare/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23PersonalHealthCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23PersonalHealthCare/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Service\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Service/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Service\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Service/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Service\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Service/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Storage\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Storage/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Storage\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Storage/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Storage\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Storage/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Tablet\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Tablet/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Tablet\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Tablet/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Tablet\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Electronics%23Tablet/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23Book\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=FMCGAndOthers%23Book/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23Book\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=FMCGAndOthers%23Book/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23Book\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=FMCGAndOthers%23Book/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23HomeAndPersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=FMCGAndOthers%23HomeAndPersonalCare/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23HomeAndPersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=FMCGAndOthers%23HomeAndPersonalCare/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23HomeAndPersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=FMCGAndOthers%23HomeAndPersonalCare/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FlipkartPackagingMaterial%23FlipkartPackagingMaterial\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=FlipkartPackagingMaterial%23FlipkartPackagingMaterial/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FlipkartPackagingMaterial%23FlipkartPackagingMaterial\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=FlipkartPackagingMaterial%23FlipkartPackagingMaterial/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FlipkartPackagingMaterial%23FlipkartPackagingMaterial\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=FlipkartPackagingMaterial%23FlipkartPackagingMaterial/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23Furniture\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23Furniture/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23Furniture\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23Furniture/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23Furniture\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23Furniture/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeDecor\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HomeDecor/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeDecor\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HomeDecor/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeDecor\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HomeDecor/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeFurnishing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HomeFurnishing/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeFurnishing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HomeFurnishing/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeFurnishing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HomeFurnishing/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeImprovementTool\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HomeImprovementTool/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeImprovementTool\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HomeImprovementTool/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeImprovementTool\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HomeImprovementTool/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HouseHold\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HouseHold/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HouseHold\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HouseHold/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HouseHold\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23HouseHold/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=HomeAndFurniture%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23AirConditioner\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23AirConditioner/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23AirConditioner\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23AirConditioner/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23AirConditioner\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23AirConditioner/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23ElectricAppliances\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23ElectricAppliances/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23ElectricAppliances\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23ElectricAppliances/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23ElectricAppliances\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23ElectricAppliances/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23HomeEntertainmentLarge\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23HomeEntertainmentLarge/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23HomeEntertainmentLarge\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23HomeEntertainmentLarge/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23HomeEntertainmentLarge\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23HomeEntertainmentLarge/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Microwave\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23Microwave/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Microwave\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23Microwave/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Microwave\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23Microwave/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Refrigerator\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23Refrigerator/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Refrigerator\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23Refrigerator/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Refrigerator\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23Refrigerator/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23WashingMachineDryer\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23WashingMachineDryer/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23WashingMachineDryer\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23WashingMachineDryer/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23WashingMachineDryer\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Large%23WashingMachineDryer/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23FootWearFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23FootWearFitness/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23FootWearFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23FootWearFitness/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23FootWearFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23FootWearFitness/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23Kid\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23Kid/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23Kid\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23Kid/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23Kid\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23Kid/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23MenAccessory/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23MenAccessory/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23MenAccessory/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23MenClothing/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23MenClothing/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23MenClothing/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23WomenAccessory/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23WomenAccessory/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23WomenAccessory/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23WomenClothing/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23WomenClothing/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23WomenClothing/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenFW\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23WomenFW/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenFW\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23WomenFW/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenFW\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=LifeStyle%23WomenFW/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Mobile%23Mobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Mobile%23Mobile/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Mobile%23Mobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Mobile%23Mobile/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Mobile%23Mobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Mobile%23Mobile/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Others%23Others\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Others%23Others/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Others%23Others\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Others%23Others/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Others%23Others\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Others%23Others/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Subscription%23Subscription\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Subscription%23Subscription/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Subscription%23Subscription\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Subscription%23Subscription/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Subscription%23Subscription\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=Subscription%23Subscription/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"WrongProcurement%23WrongProcurement\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=WrongProcurement%23WrongProcurement/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"WrongProcurement%23WrongProcurement\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=WrongProcurement%23WrongProcurement/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"WrongProcurement%23WrongProcurement\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__53/supercategory=WrongProcurement%23WrongProcurement/fulfillment_type=NONFBF/000000_0"
+        ]
+      }
+    },
+    {
+      "request_id": 4220435,
+      "data_frame_id": "dp_funnel_unit_share_dataframe_dup",
+      "column_metadata": {
+        "super_category": "IN",
+        "fulfillment_type": "IN",
+        "day": "RANGE"
+      },
+      "dataframes": {
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23AutoAccessorys\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23AutoAccessorys/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23AutoAccessorys\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23AutoAccessorys/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23AutoAccessorys\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23AutoAccessorys/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23BooksMedia\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23BooksMedia/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23BooksMedia\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23BooksMedia/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23BooksMedia\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23BooksMedia/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23FMCG\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23FMCG/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23FMCG\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23FMCG/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23FMCG\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23FMCG/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23PersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23PersonalCare/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23PersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23PersonalCare/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23PersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23PersonalCare/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23SportFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23SportFitness/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23SportFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23SportFitness/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23SportFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23SportFitness/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23ToysAndBabyCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23ToysAndBabyCare/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23ToysAndBabyCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23ToysAndBabyCare/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"BGM%23ToysAndBabyCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=BGM%23ToysAndBabyCare/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicAccessory%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=ElectronicAccessory%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicAccessory%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=ElectronicAccessory%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicAccessory%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=ElectronicAccessory%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicDevices%23CCCAcc\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=ElectronicDevices%23CCCAcc/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicDevices%23CCCAcc\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=ElectronicDevices%23CCCAcc/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ElectronicDevices%23CCCAcc\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=ElectronicDevices%23CCCAcc/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Audio\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Audio/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Audio\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Audio/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Audio\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Audio/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Automobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Automobile/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Automobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Automobile/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Automobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Automobile/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Camera\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Camera/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Camera\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Camera/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Camera\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Camera/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Gaming\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Gaming/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Gaming\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Gaming/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Gaming\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Gaming/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23IOT\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23IOT/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23IOT\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23IOT/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23IOT\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23IOT/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23ITAccessory/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23ITAccessory/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23ITAccessory/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITPeripherals\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23ITPeripherals/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITPeripherals\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23ITPeripherals/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23ITPeripherals\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23ITPeripherals/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23LaptopAndDesktop\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23LaptopAndDesktop/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23LaptopAndDesktop\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23LaptopAndDesktop/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23LaptopAndDesktop\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23LaptopAndDesktop/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23MobileAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23MobileAccessory/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23MobileAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23MobileAccessory/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23MobileAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23MobileAccessory/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23PersonalHealthCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23PersonalHealthCare/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23PersonalHealthCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23PersonalHealthCare/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23PersonalHealthCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23PersonalHealthCare/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Service\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Service/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Service\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Service/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Service\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Service/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Storage\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Storage/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Storage\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Storage/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Storage\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Storage/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Tablet\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Tablet/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Tablet\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Tablet/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Electronics%23Tablet\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Electronics%23Tablet/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23Book\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=FMCGAndOthers%23Book/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23Book\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=FMCGAndOthers%23Book/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23Book\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=FMCGAndOthers%23Book/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23HomeAndPersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=FMCGAndOthers%23HomeAndPersonalCare/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23HomeAndPersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=FMCGAndOthers%23HomeAndPersonalCare/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FMCGAndOthers%23HomeAndPersonalCare\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=FMCGAndOthers%23HomeAndPersonalCare/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FlipkartPackagingMaterial%23FlipkartPackagingMaterial\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=FlipkartPackagingMaterial%23FlipkartPackagingMaterial/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FlipkartPackagingMaterial%23FlipkartPackagingMaterial\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=FlipkartPackagingMaterial%23FlipkartPackagingMaterial/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"FlipkartPackagingMaterial%23FlipkartPackagingMaterial\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=FlipkartPackagingMaterial%23FlipkartPackagingMaterial/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23Furniture\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23Furniture/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23Furniture\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23Furniture/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23Furniture\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23Furniture/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeDecor\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HomeDecor/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeDecor\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HomeDecor/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeDecor\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HomeDecor/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeFurnishing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HomeFurnishing/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeFurnishing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HomeFurnishing/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeFurnishing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HomeFurnishing/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeImprovementTool\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HomeImprovementTool/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeImprovementTool\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HomeImprovementTool/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HomeImprovementTool\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HomeImprovementTool/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HouseHold\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HouseHold/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HouseHold\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HouseHold/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23HouseHold\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23HouseHold/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"HomeAndFurniture%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=HomeAndFurniture%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23AirConditioner\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23AirConditioner/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23AirConditioner\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23AirConditioner/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23AirConditioner\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23AirConditioner/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23ElectricAppliances\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23ElectricAppliances/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23ElectricAppliances\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23ElectricAppliances/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23ElectricAppliances\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23ElectricAppliances/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23HomeEntertainmentLarge\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23HomeEntertainmentLarge/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23HomeEntertainmentLarge\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23HomeEntertainmentLarge/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23HomeEntertainmentLarge\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23HomeEntertainmentLarge/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Microwave\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23Microwave/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Microwave\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23Microwave/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Microwave\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23Microwave/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Refrigerator\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23Refrigerator/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Refrigerator\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23Refrigerator/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23Refrigerator\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23Refrigerator/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23WashingMachineDryer\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23WashingMachineDryer/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23WashingMachineDryer\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23WashingMachineDryer/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Large%23WashingMachineDryer\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Large%23WashingMachineDryer/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23FootWearFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23FootWearFitness/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23FootWearFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23FootWearFitness/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23FootWearFitness\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23FootWearFitness/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23Kid\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23Kid/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23Kid\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23Kid/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23Kid\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23Kid/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23MenAccessory/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23MenAccessory/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23MenAccessory/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23MenClothing/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23MenClothing/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23MenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23MenClothing/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23NA/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23NA/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23NA\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23NA/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23WomenAccessory/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23WomenAccessory/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenAccessory\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23WomenAccessory/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23WomenClothing/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23WomenClothing/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenClothing\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23WomenClothing/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenFW\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23WomenFW/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenFW\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23WomenFW/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"LifeStyle%23WomenFW\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=LifeStyle%23WomenFW/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Mobile%23Mobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Mobile%23Mobile/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Mobile%23Mobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Mobile%23Mobile/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Mobile%23Mobile\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Mobile%23Mobile/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Others%23Others\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Others%23Others/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Others%23Others\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Others%23Others/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Others%23Others\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Others%23Others/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Subscription%23Subscription\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Subscription%23Subscription/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Subscription%23Subscription\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Subscription%23Subscription/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"Subscription%23Subscription\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=Subscription%23Subscription/fulfillment_type=NONFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"WrongProcurement%23WrongProcurement\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"ALPHA\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=WrongProcurement%23WrongProcurement/fulfillment_type=ALPHA/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"WrongProcurement%23WrongProcurement\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"MPFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=WrongProcurement%23WrongProcurement/fulfillment_type=MPFBF/000000_0"
+        ],
+        "[{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"WrongProcurement%23WrongProcurement\"]},{\"type\":\"multiValue\",\"name\":null,\"column_type\":\"IN\",\"values\":[\"NONFBF\"]},{\"type\":\"biValue\",\"name\":null,\"column_type\":\"RANGE\",\"first_value\":\"2017-01-16\",\"second_value\":\"2018-01-16\"}]": [
+          "hdfs://hadoopcluster2/apps/hive/warehouse/dsp.db/dp_funnel_unit_share_usecase__54/supercategory=WrongProcurement%23WrongProcurement/fulfillment_type=NONFBF/000000_0"
+        ]
+      }
+    }
+  ]
+}

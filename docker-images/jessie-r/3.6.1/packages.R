@@ -1,0 +1,8 @@
+install.packages('Rserve', version="3.1", repos='http://cran.us.r-project.org')
+install.packages('rJava', version="11", repos='http://cran.us.r-project.org')
+install.packages('plyr', version="1.8.4", repos='http://cran.us.r-project.org')
+install.packages('data.table', version="1.12.2", repos='http://cran.us.r-project.org')
+install.packages('dplyr', version="0.8.3", repos='http://cran.us.r-project.org')
+install.packages('lpSolve', version="5.6.13.1", repos='http://cran.us.r-project.org')
+install.packages('lpSolveAPI', version="5.5.2.0", repos='http://cran.us.r-project.org')
+install.packages('lubridate', version="1.7.4", repos='http://cran.us.r-project.org')

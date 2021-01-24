@@ -1,0 +1,55 @@
+{
+  "dataframeRunId": 24734,
+  "jobId": "8720484_1071768192950948",
+  "dataFrameEntity": null,
+  "dataframeAuditStatus": "COMPLETED",
+  "payload": {
+    "request_id": 8720484,
+    "data_frame_id": "ltv_dataframe",
+    "column_metadata": {
+      "cluster_num": "IN"
+    },
+    "dataframes": {
+      "[{\"type\":\"multiValue\",\"column_type\":\"IN\",\"values\":[\"0\"]}]": [
+        "hdfs://hadoopcluster2/projects/planning/dcp_fact.db/ltv_raw_data_fact/refresh_id=1551096813/cluster_num=0/000000_0"
+      ]
+    }
+  },
+  "dataFrameConfig": {
+    "dataframe_scope": [],
+    "visible_signals": [
+      {
+        "name": "ltv_acc"
+      },
+      {
+        "name": "ltv_month_of_calc"
+      },
+      {
+        "name": "ltv_vertical"
+      },
+      {
+        "name": "ltv_units"
+      },
+      {
+        "name": "ltv_gmv"
+      },
+      {
+        "name": "ltv_rtogmv"
+      },
+      {
+        "name": "ltv_rto_units"
+      },
+      {
+        "name": "ltv_rvpunits"
+      },
+      {
+        "name": "ltv_rvpgmv"
+      },
+      {
+        "name": "ltv_status"
+      }
+    ]
+  },
+  "createdAt": 1551119152000,
+  "updatedAt": 1551119158000
+}
